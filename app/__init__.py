@@ -2,7 +2,6 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import List, Dict, ClassVar
 
-
 @dataclass
 class Note:
 HIGH: ClassVar[str] = 'HIGH'
@@ -22,7 +21,6 @@ self.tags.append(tag)
 
 def _str_(self) -> str:
 return f"Date: {self.creation_date}\n{self.title}: {self.text}"
-
 
 @dataclass
 class Notebook:
